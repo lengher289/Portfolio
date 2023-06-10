@@ -16,11 +16,11 @@ This is a Python program that simulates a Safari Zone adventure. It uses the Tki
 ## Game Screenshots
 
 ### Startup Image
-![Startup Image](images/startup.png)
+![Startup Image](startup.png)
 *Figure 1: The game interface when it starts up.*
 
 ### Game End Image
-![Game End Image](images/game_end.png)
+![Game End Image](game_end.png)
 *Figure 2: The game interface when the game ends.*
 
 ## Pokemon Class
