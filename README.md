@@ -1,5 +1,5 @@
-# 💫 About Me:
-I’m currently working on Developing analytical insights with Tableau for global data and<br>Building data pipelines and automating processes<br><br>I’m looking to collaborate on Data engineering and machine learning projects<br>React-based web applications for personal data visualization<br><br>I’m looking for help with Optimizing machine learning models <br>Exploring new tools for data automation in the cloud (AWS)<br><br>I’m currently learning PySpark and Databricks for large-scale data processing data viz tools<br>and Advanced statistics and machine learning techniques<br><br>Fun fact<br>I once led an esports team as a coach, focusing on team collaboration and performance improvement.<br>I have also traveled to 7 cities 2 of which are international within the past 7 months!
+# About Me:
+I’m currently working on Developing analytical insights with Tableau for global data and<br>Building data pipelines and automating processes<br><br>I’m looking to collaborate on Data engineering and machine learning projects<br><br>I’m currently learning machine learning techniques<br><br>Fun facts:<br>I once led an esports team as a coach, focusing on team collaboration and performance improvement.<br>I have also traveled to 7 cities 2 of which are international within the past 9 months!
 
 
 # 💻 Tech Stack:
