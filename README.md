@@ -1,10 +1,29 @@
-# About Me:
-In progress...
+# Portfolio
 
-# 💻 Tech Stack:
-![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54) ![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white) ![MicrosoftSQLServer](https://img.shields.io/badge/Microsoft%20SQL%20Server-CC2927?style=for-the-badge&logo=microsoft%20sql%20server&logoColor=white) ![MySQL](https://img.shields.io/badge/mysql-4479A1.svg?style=for-the-badge&logo=mysql&logoColor=white) ![Teradata](https://img.shields.io/badge/Teradata-F37440?style=for-the-badge&logo=teradata&logoColor=white) ![Markdown](https://img.shields.io/badge/markdown-%23000000.svg?style=for-the-badge&logo=markdown&logoColor=white) ![Shell Script](https://img.shields.io/badge/shell_script-%23121011.svg?style=for-the-badge&logo=gnu-bash&logoColor=white) ![AWS](https://img.shields.io/badge/AWS-%23FF9900.svg?style=for-the-badge&logo=amazon-aws&logoColor=white) ![AWS](https://img.shields.io/badge/AWS-%23FF9900.svg?style=for-the-badge&logo=amazon-aws&logoColor=white) ![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white) ![AmazonDynamoDB](https://img.shields.io/badge/Amazon%20DynamoDB-4053D6?style=for-the-badge&logo=Amazon%20DynamoDB&logoColor=white) ![MicrosoftSQLServer](https://img.shields.io/badge/Microsoft%20SQL%20Server-CC2927?style=for-the-badge&logo=microsoft%20sql%20server&logoColor=white) ![SQLite](https://img.shields.io/badge/sqlite-%2307405e.svg?style=for-the-badge&logo=sqlite&logoColor=white) ![NumPy](https://img.shields.io/badge/numpy-%23013243.svg?style=for-the-badge&logo=numpy&logoColor=white) ![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white) ![Plotly](https://img.shields.io/badge/Plotly-%233F4F75.svg?style=for-the-badge&logo=plotly&logoColor=white) ![scikit-learn](https://img.shields.io/badge/scikit--learn-%23F7931E.svg?style=for-the-badge&logo=scikit-learn&logoColor=white) ![Scipy](https://img.shields.io/badge/SciPy-%230C55A5.svg?style=for-the-badge&logo=scipy&logoColor=%white) ![Matplotlib](https://img.shields.io/badge/Matplotlib-%23ffffff.svg?style=for-the-badge&logo=Matplotlib&logoColor=black) ![mlflow](https://img.shields.io/badge/mlflow-%23d9ead3.svg?style=for-the-badge&logo=numpy&logoColor=blue) ![GitLab](https://img.shields.io/badge/gitlab-%23181717.svg?style=for-the-badge&logo=gitlab&logoColor=white)
+Data and analytics projects by Leng Her.
 
+I'm a data professional working in healthcare data migration, with prior experience in
+airline operations analytics. Most of what's here started as a question I wanted answered
+or a manual process I wanted gone — scraping something, modeling it, and seeing whether
+the pattern held up.
 
-# Contact Information
+**Background:** MS Data Science (University of St. Thomas), BAS Information Technology
+Infrastructure (University of Minnesota). Currently Senior Business Analyst on data
+migration at Optum; previously Data Analyst at Endeavor Air.
 
-If you are interested in learning more about my work or would like to discuss potential employment opportunities, please feel free to contact me at lengher289@gmail.com. Thank you for considering my portfolio!
+---
+
+## Projects
+
+| Project | What it does | Stack |
+|---|---|---|
+| [Adult Day Care Attendance Automation](./Automation_Google_Drive) | Replaced a manual monthly attendance tally by parsing Word timesheets across participant folders and generating a consolidated Excel report | Python, python-docx, pandas, Google Drive |
+| [Reddit Post Analysis](./reddit-top-post-analysis) | NLP and clustering on r/AskReddit — sentiment scoring, topic modeling, and whether post characteristics cluster meaningfully | Python, NLTK, scikit-learn, Reddit API |
+| [Valorant Tournament Team Balancer](./Autobalance_val_tourny) | Constraint-based team formation using player rank values and per-team point caps | Python, pandas |
+| [Billboard Top 100 Clustering](./Billboard%20Top%20100%20Clustering) | Scrapes Billboard year-end charts, enriches with Spotify audio features, clusters songs by sound profile | Python, BeautifulSoup, Spotify API, scikit-learn |
+
+---
+
+## Contact
+
+lengher289@gmail.com
