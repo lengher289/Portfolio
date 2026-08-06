@@ -17,10 +17,11 @@ migration at Optum; previously Data Analyst at Endeavor Air.
 
 | Project | What it does | Stack |
 |---|---|---|
-| [Adult Day Care Attendance Automation](./Automation_Google_Drive) | Replaced a manual monthly attendance tally by parsing Word timesheets across participant folders and generating a consolidated Excel report | Python, python-docx, pandas, Google Drive |
-| [Reddit Post Analysis](./reddit-top-post-analysis) | NLP and clustering on r/AskReddit — sentiment scoring, topic modeling, and whether post characteristics cluster meaningfully | Python, NLTK, scikit-learn, Reddit API |
-| [Valorant Tournament Team Balancer](./Autobalance_val_tourny) | Constraint-based team formation using player rank values and per-team point caps | Python, pandas |
-| [Billboard Top 100 Clustering](./Billboard%20Top%20100%20Clustering) | Scrapes Billboard year-end charts, enriches with Spotify audio features, clusters songs by sound profile | Python, BeautifulSoup, Spotify API, scikit-learn |
+| [adult-daycare-attendance-automation](./adult-daycare-attendance-automation) | Replaced a manual monthly attendance tally by parsing Word timesheets across participant folders and generating a consolidated Excel report | Python, python-docx, pandas, Google Drive |
+| [reddit-top-post-analysis](./reddit-top-post-analysis) | NLP and clustering on r/AskReddit — sentiment scoring, topic modeling, and whether post characteristics cluster meaningfully | Python, NLTK, scikit-learn, Reddit API |
+| [valorant-team-balancer](./valorant-team-balancer) | Constraint-based team formation using player rank values and per-team point caps | Python, pandas |
+| [billboard-audio-clustering](./billboard-audio-clustering) | Scrapes Billboard year-end charts, enriches with Spotify audio features, clusters songs by sound profile | Python, BeautifulSoup, Spotify API, scikit-learn |
+| [cloud-and-mlops-notebooks](./cloud-and-mlops-notebooks) | S3 data storage patterns and ML pipeline tracking with experiment logging | Python, AWS S3, MLflow, scikit-learn |
 
 ---
 
