@@ -20,25 +20,42 @@ to its captain.
 assignments until it finds one satisfying both the per-team point ceiling and the roster
 size limit. Retries up to 10,000 times by default.
 
-## Design notes
+## Design decisions
 
-**Randomized retry rather than exact optimization.** This is a bin-packing variant, and
-an exact solver would be the rigorous approach. For tournament sizes — a few dozen players
-across a handful of teams — repeated random assignment converges fast enough that the
-added complexity wasn't worth it. The tradeoff is that a very tight point cap can exhaust
-the retry budget without finding a valid solution.
+**The rank-to-point scale is non-linear, and deliberately so.** The obvious approach is to
+number the ranks 1 through 25 and call it done. That's wrong, because the skill gap between
+adjacent ranks isn't constant. Iron to Bronze is a much narrower real difference than
+Diamond to Ascendant, and at the top of the ladder the distribution compresses — Immortal
+and Radiant are close enough in practical terms that treating them as widely separated
+tiers overweights a distinction that doesn't change how a team plays.
 
-**Point caps over rank averaging.** Averaging ranks lets a team stack two very high
-players against three low ones and still look balanced on paper. A hard point ceiling
-prevents that shape.
+A linear scale would inflate spread at the bottom and flatten it at the top, producing
+teams that look balanced on paper and aren't. The hardcoded values encode the actual shape
+of the skill curve instead. There's also real variance within a rank — a Silver player can
+perform at a Gold level on a given night — so the scale is deliberately coarse rather than
+claiming a precision the underlying signal doesn't support.
+
+**Point caps over rank averaging.** Averaging ranks lets a team stack two very high players
+against three low ones and still look balanced. A hard point ceiling prevents that shape.
+
+**Randomized retry rather than exact optimization.** This is a bin-packing variant, and an
+exact solver would be the rigorous approach. For tournament sizes — a few dozen players
+across a handful of teams — repeated random assignment converges fast enough that the added
+complexity wasn't worth it. The tradeoff is that a very tight point cap can exhaust the
+retry budget without finding a valid solution.
 
 ## Limitations
 
-- Rank values are hardcoded. Fetching live ranks from the Riot API would remove the manual
-  data entry step and keep ranks current.
-- May need several runs to land a valid configuration when constraints are tight — there's
-  no feedback distinguishing "no solution exists" from "got unlucky."
-- No role balancing. Teams are balanced on skill points only, not on agent roles or
+- **Rank entry is manual.** Pulling current ranks from the Riot API would remove the data
+  entry step and keep ranks fresh. The rank-to-point mapping would stay as-is — that's a
+  modeling choice, not missing data.
+- **The point scale is untested against outcomes.** It reflects my read of the skill curve,
+  not a fit to actual match results. With enough tournament data you could tune the values
+  against observed team win rates.
+- **No feedback on infeasibility.** Exhausting the retry budget doesn't distinguish "no
+  valid assignment exists" from "got unlucky." Detecting infeasibility up front would be a
+  real improvement.
+- **No role balancing.** Teams are balanced on skill points only, not agent roles or
   position preference.
 
 ## Running it
